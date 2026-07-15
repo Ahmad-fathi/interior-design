@@ -8,7 +8,6 @@ import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight, Sparkles } from 'lucide-react';
 import { Language } from '../types';
 import { DICTIONARY } from '../data';
-import heroBg from '../assets/images/luxury_interior_hero_1784134176910.jpg';
 
 interface HeroProps {
   lang: Language;
@@ -18,6 +17,7 @@ interface HeroProps {
 
 export default function Hero({ lang, onOpenConsultation, onViewPortfolio }: HeroProps) {
   const d = DICTIONARY[lang];
+  const heroBg = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=85";
 
   return (
     <section
