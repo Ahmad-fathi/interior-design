@@ -17,24 +17,17 @@ interface HeroProps {
 
 export default function Hero({ lang, onOpenConsultation, onViewPortfolio }: HeroProps) {
   const d = DICTIONARY[lang];
-  const heroBg = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=85";
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
     >
-      {/* Background Image Container */}
+      {/* Background Container - Pure minimalist luxury dark backdrop */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroBg}
-          alt="Luxury Modern Living Room"
-          className="w-full h-full object-cover scale-105 select-none"
-          style={{ objectPosition: 'center 60%' }}
-        />
-        {/* Cinematic dark radial and linear overlays for optimal contrast and text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0e0a09] via-black/40 to-black/60 z-10" />
-        <div className="absolute inset-0 bg-radial-at-c from-transparent via-black/20 to-black/75 z-10" />
+        {/* Cinematic dark radial and linear overlays for optimal contrast and depth */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050404] via-black/40 to-black/60 z-10" />
+        <div className="absolute inset-0 bg-radial-at-c from-[#110e0d]/30 via-black/20 to-black/80 z-10" />
       </div>
 
       {/* Floating Sparkle Elements to add luxury atmosphere */}
