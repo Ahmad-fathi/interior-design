@@ -1,0 +1,6 @@
+{
+  "name": "Interior Design Portfolio",
+  "description": "A luxury interior design portfolio and consultation platform with responsive RTL Arabic support and modern interactive elements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
