@@ -8,6 +8,7 @@ import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight, Sparkles } from 'lucide-react';
 import { Language } from '../types';
 import { DICTIONARY } from '../data';
+import heroBg from '../assets/images/luxury_interior_hero_1784134176910.jpg';
 
 interface HeroProps {
   lang: Language;
@@ -19,8 +20,7 @@ export default function Hero({ lang, onOpenConsultation, onViewPortfolio }: Hero
   const d = DICTIONARY[lang];
   
   // Custom image generated from the design prompt to match the user screenshot exactly
-  // Path: /src/assets/images/luxury_interior_hero_1784134176910.jpg
-  const heroBg = '/src/assets/images/luxury_interior_hero_1784134176910.jpg';
+  // Imported via ESM so Vite builds/renames it properly for Cloudflare/Production.
 
   return (
     <section
