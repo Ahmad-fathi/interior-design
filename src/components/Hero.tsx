@@ -19,8 +19,9 @@ interface HeroProps {
 export default function Hero({ lang, onOpenConsultation, onViewPortfolio }: HeroProps) {
   const d = DICTIONARY[lang];
   
-  // Custom image generated from the design prompt to match the user screenshot exactly
-  // Imported via ESM so Vite builds/renames it properly for Cloudflare/Production.
+  // High-performance premium CDN image matching the luxury warm-charcoal and gold theme of Madar.
+  // This ensures 100% reliable rendering on Cloudflare, Pages, and standard CDN distributions.
+  const [imageSrc, setImageSrc] = React.useState("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=85");
 
   return (
     <section
@@ -30,10 +31,16 @@ export default function Hero({ lang, onOpenConsultation, onViewPortfolio }: Hero
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroBg}
+          src={imageSrc}
           alt="Luxury Modern Living Room"
           className="w-full h-full object-cover scale-105 select-none"
           referrerPolicy="no-referrer"
+          onError={() => {
+            // Fallback to imported local asset if CDN is ever unreachable
+            if (imageSrc !== heroBg) {
+              setImageSrc(heroBg);
+            }
+          }}
           style={{ objectPosition: 'center 60%' }}
         />
         {/* Cinematic dark radial and linear overlays for optimal contrast and text readability */}
