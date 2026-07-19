@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+Interior Design Website
 
-# Run and deploy your AI Studio app
+A modern and elegant interior design website built to showcase residential and commercial design services. The project focuses on clean aesthetics, responsive layouts, smooth user experience, and high performance.
 
-This contains everything you need to run your app locally.
+Overview
 
-View your app in AI Studio: https://ai.studio/apps/b50a5cd1-14ba-40b4-b8e1-4c01239f806b
+This website was created to help interior design studios present their portfolio, services, and company information in a visually appealing and professional way.
 
-## Run Locally
+Features
+Fully responsive design
+Modern and elegant UI
+Portfolio/Gallery section
+Services showcase
+About Us page
+Contact form
+Smooth scrolling and animations
+SEO-friendly structure
+Optimized for fast loading
 
-**Prerequisites:**  Node.js
+Tech Stack:
+TypeScript
+ReactJS
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Future Improvements:
+Blog section
+Dark mode
+Online consultation booking
+CMS integration
+Multi-language support
